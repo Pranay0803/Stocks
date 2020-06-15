@@ -76,28 +76,6 @@ body {
   background: var(--page-header-bgColor);
 }
 
-/*In case you prefer an absolutely positioned header that covers the full page height, add these styles*/
-/*body {
-  position: relative;
-}
-
-.page-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-}*/
-
-/*remove these styles*/
-/*.page-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  overflow: auto;
-}*/
-
 .page-header nav {
   display: flex;
   flex-direction: column;
@@ -286,38 +264,10 @@ body {
   box-shadow: var(--box-shadow);
 }
 
-#summary{
-  height: 150px;
-  border-left: darkblue 40px solid;
-}
-
-#issues{
-  border-left: maroon 40px solid;
-  overflow:auto;
-}
-#stock_inventory{
-  border-left:darkcyan 40px solid;
-}
-
-#stock_inventory td{
-  border-right: black 1px solid;
-}
-
 .title{
   text-align: center;
   color: maroon;
   font-size: 1.2rem;
-}
-table{
-  margin-left: 2rem;
-  margin-right: 2rem;
-  width: 100%;
-  border-radius: 25px;
-}
-
-th,td{
-  padding: 0.5rem;
-  text-align: center;
 }
 
 .page-content .grid > div:first-child,
@@ -325,9 +275,6 @@ th,td{
   grid-column: 1 / -1;
 }
 
-
-/* MQ RULES
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media screen and (max-width: 767px) {
   .page-header,
   .page-content {
@@ -457,17 +404,4 @@ th,td{
     left: 40px;
     width: calc(100% - 40px);
   }
-}
-
-
-/* FOOTER
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.page-footer {
-  font-size: 0.85rem;
-  text-align: right;
-  margin-top: 10px;
-}
-
-.page-footer span {
-  color: var(--red);
 }

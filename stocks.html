@@ -4,41 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>dash</title>
+    <title>stocks</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/dash.css">
-
-    <style>
-      #summary{
-        height: 150px;
-        border-left: darkblue 40px solid;
-      }
-      #issues{
-        border-left: maroon 40px solid;
-        overflow:auto;
-      }
-      #stock_inventory{
-        border-left:darkcyan 40px solid;
-      }
-      #stock_inventory td{
-        border-right: black 1px solid;
-      }
-      .title{
-        text-align: center;
-        color: maroon;
-        font-size: 1.2rem;
-      }
-      table{
-        margin-left: 2rem;
-        margin-right: 2rem;
-        width: 100%;
-        border-radius: 25px;
-      }
-      th,td{
-        padding: 0.5rem;
-        text-align: center;
-      }
-    </style>
 
 </head>
 <body>
@@ -167,61 +135,25 @@
             </div>
           </div>
         </section>
-
-        <div class="grid modules">
-          <div id="summary">
-            <table class="table_summary">
-              <tr><th colspan="5" class="title">SUMMARY</th></tr>
-              <tr style="background-color: gainsboro;">
-                <th>Delivered</th>
-                <th>Shipped</th>
-                <th>Finished</th>
-                <th>In-Process</th>
-                <th>Pending</th>
-              </tr>
-              <tr>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-              </tr>
-            </table>
-          </div>
-          <div id="issues">
-            <table>
-              <tr><th class="title">COMPLAINTS</th></tr>
-              <tr><td>No Complaints Currently</td></tr>
-            </table>
-          </div>
-          <div id="stock_inventory">
-            <table>
-              <tr><th class="title" colspan="2">STOCK INVENTORY</th></tr>
-              <tr style="">
-                <th style="width: 50%;">Categories</td>
-                <td>8</td>
-              </tr>
-              <tr>
-                <th>Low Stock</td>
-                <td>3</td>
-              </tr>
-              <tr style="color: red;">
-                <th>Stock Exhausted</td>
-                <td>1</td>
-              </tr>
-            </table>
-          </div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-
+        <div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  STOCK CATEGORIES
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Category 1</a>
+                  <a class="dropdown-item" href="#">Category 2</a>
+                  <a class="dropdown-item" href="#">Category 3</a>
+                </div>
+            </div>
+            
+        </div>   
     </section>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="js/dash.js"></script>
+    <script src="js/dash.js"></script>
   
 </body>
 </html>
